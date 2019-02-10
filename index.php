@@ -33,6 +33,12 @@
             <div class="panel portfolio">
                 <div class="content">
                     <div class="project srProject">
+                        <div class="pictures one">
+                            <div style="background-image: url('style/imgs/pronote.png')"></div>
+                        </div>
+                        <div class="label">Pronote V2 (2018)</div>
+                    </div>
+                    <div class="project srProject">
                         <div class="pictures two">
                             <div style="background-image: url('style/imgs/chronocross1.png')"></div>
                             <div style="background-image: url('style/imgs/chronocross2.png')"></div>
