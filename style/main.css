@@ -84,6 +84,10 @@ a {
     background-color: #f0f0f0;
 }
 
+.panels > .portfolio {
+    text-align: center;
+}
+
 .panels > .about {
     text-align: right;
 

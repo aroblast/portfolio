@@ -30,65 +30,14 @@
         </div>
 
         <div class="panels">
-            <div class="panel about">
-                <div class="content map">
-                    <div class="title">About me</div>
-                </div>
-            </div>
-            <div class="panel experience">
-                <div class="horizontalContainer">
-                    <div class="rowItem two srRowNumber">
-                        <div class="number"><?php echo (date('Y', strtotime('today')) - 2013); ?></div>
-                        <div class="title">Years of Experience</div>
-                    </div>
-                    <div class="rowItem two srRowNumber">
-                        <div class="number">5</div>
-                        <div class="title">Main Programming Languages</div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel slide">
-                <div class="title">Skills and Knowledge</div>
-                <div class="content little">
-                    <div class="column two srColumn">
-                        <div class="skill">
-                            <div class="title"><b>Web Designer/</b></br> 80%</div>
-                            <div class="progressbar">
-                                <div style="width: 80%"></div>
-                            </div>
-                            <div class="items">
-                                <div class="item">Clean Styles</div>
-                                <div class="item">UI/UX Designer</div>
-                                <div class="item">Professional Looking Websites</div>
-                                <div class="item">Photoshop, Sketch, Adobe XD</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column two srColumn">
-                        <div class="skill">
-                            <div class="title"><b>Web Programmer/</b></br> 85%</div>
-                            <div class="progressbar">
-                                <div class="" style="width: 85%"></div>
-                            </div>
-                            <div class="items">
-                                <div class="item">Clean Code</div>
-                                <div class="item">Multiple Back-End Languages</div>
-                                <div class="item">CSS Responsive</div>
-                                <div class="item">Server Knowledge</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel orange slideTop">
-                <div class="title">Portfolio</div>
-                <div class="content little">
+            <div class="panel portfolio">
+                <div class="content">
                     <div class="project srProject">
                         <div class="pictures two">
-                            <div style="background-image: url('style/imgs/artistymeet1.png')"></div>
-                            <div style="background-image: url('style/imgs/artistymeet3.png')"></div>
+                            <div style="background-image: url('style/imgs/chronocross1.png')"></div>
+                            <div style="background-image: url('style/imgs/chronocross2.png')"></div>
                         </div>
-                        <div class="label">ArtistyMeet (2018)</div>
+                        <div class="label">Chronocross (2018)</div>
                     </div>
                     <div class="project srProject">
                         <div class="pictures">
@@ -120,6 +69,56 @@
                             <div style="background-image: url('style/imgs/zicanouic3.png')"></div>
                         </div>
                         <div class="label">Zicanouic (2016)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel about">
+                <div class="content map">
+                    <div class="title">About me</div>
+                </div>
+            </div>
+            <div class="panel experience">
+                <div class="horizontalContainer">
+                    <div class="rowItem two srRowNumber">
+                        <div class="number"><?php echo (date('Y', strtotime('today')) - 2013); ?></div>
+                        <div class="title">Years of Experience</div>
+                    </div>
+                    <div class="rowItem two srRowNumber">
+                        <div class="number">5</div>
+                        <div class="title">Main Programming Languages</div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="title">Skills and Knowledge</div>
+                <div class="content little">
+                    <div class="column two srColumn">
+                        <div class="skill">
+                            <div class="title"><b>Web Designer/</b></br> 80%</div>
+                            <div class="progressbar">
+                                <div style="width: 80%"></div>
+                            </div>
+                            <div class="items">
+                                <div class="item">Clean Styles</div>
+                                <div class="item">UI/UX Designer</div>
+                                <div class="item">Professional Looking Websites</div>
+                                <div class="item">Photoshop, Sketch, Adobe XD</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column two srColumn">
+                        <div class="skill">
+                            <div class="title"><b>Web Programmer/</b></br> 85%</div>
+                            <div class="progressbar">
+                                <div class="" style="width: 85%"></div>
+                            </div>
+                            <div class="items">
+                                <div class="item">Clean Code</div>
+                                <div class="item">Multiple Back-End Languages</div>
+                                <div class="item">CSS Responsive</div>
+                                <div class="item">Server Knowledge</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
