@@ -1,0 +1,36 @@
+/* THEME COLORS */
+.primary {
+    color: #ffffa6 !important;
+}
+
+.secondary {
+    color: #ffa6a6 !important;
+}
+
+.white {
+    color: #fff !important;
+}
+
+.dark1 {
+    color: #333 !important;
+}
+
+.dark2 {
+    color: #555 !important;
+}
+
+.dark3 {
+    color: #777 !important;
+}
+
+.primary-background {
+    background-color: #ffffa6 !important;
+}
+
+.secondary-background {
+    background-color: #ffa6a6 !important;
+}
+
+.white-background {
+    background-color: #fff !important;
+}

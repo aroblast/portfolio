@@ -1,0 +1,477 @@
+@font-face {
+    font-family: Glacial Indifference;
+    src: url('fonts/GlacialIndifference-Regular.otf');
+}
+
+body {
+    margin: 0;
+
+    background-color: #f0f0f0;
+
+    font-size: 0;
+
+    animation: fadeIn 300ms ease-in-out;
+
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Hero */
+.hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: linear-gradient(0, #444, #555);
+}
+
+.hero > .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-image: url("backgrounds/background-home.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero > .header {
+    position: absolute;
+    bottom: 120px;
+    width: 100%;
+    text-align: center;
+
+    font-family: Glacial Indifference, sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.hero > .header > div:last-of-type {
+    font-size: 40px;
+}
+
+.hero > .scrollDown {
+    position: absolute;
+    left: calc(50% - 50px);
+    bottom: 0;
+    height: 100px;
+
+    filter: invert(.7);
+}
+
+/* PANELS */
+.panels {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.panels > .panel {
+    position: relative;
+    min-height: calc(100vh - 100px);
+    padding: 50px;
+
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+.panels > .about {
+    text-align: right;
+
+    background-image: url("backgrounds/background-about.svg");
+    background-size: cover;
+    background-position: left center;
+}
+
+.panel > .content {
+    position: relative;
+}
+
+/* CONTAINERS */
+.about > .content {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 550px);
+}
+
+.panel > .content > .title {
+    position: relative;
+    display: inline-block;
+    margin-right: 100px;
+
+    font-family: Glacial Indifference, monospace;
+    font-size: 50px;
+}
+
+/* Row items */
+.item {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px 0;
+    vertical-align: top;
+    text-align: center;
+}
+
+.item.three {
+    width: calc(30% - 40px);
+}
+
+.item.two {
+    width: calc(40% - 40px);
+}
+
+.item > .icon {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    padding: 20px;
+
+    background-color: #f83;
+
+    border-radius: 100%;
+}
+
+.item > .icon > img {
+    position: relative;
+    width: 40px;
+}
+
+.item > .number {
+    position: relative;
+    text-align: center;
+
+    font-family: Glacial Indifference, sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.item > .title {
+    position: relative;
+    padding-top: 30px;
+
+    font-family: Glacial Indifference, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Skills */
+.skill {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+}
+
+.skill > .title {
+    position: relative;
+    padding: 10px 0;
+    text-align: left;
+
+    color: #f83;
+
+    font-family: Glacial Indifference, monospace;
+    font-size: 18px;
+}
+
+.skill > .items {
+    position: relative;
+    text-align: left;
+}
+
+.skill > .items > .item {
+    position: relative;
+    display: inline-block;
+    width: calc(50% - 20px);
+    margin: 10px;
+    vertical-align: top;
+
+    color: #333;
+
+    font-family: Glacial Indifference, monospace;
+    font-size: 16px;
+}
+
+/* Progress bar */
+.progressbar {
+    position: relative;
+    height: 5px;
+    margin: 10px 0;
+
+    background-color: #ddd;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.progressbar > div {
+    position: relative;
+    height: 5px;
+
+    background-color: #f83;
+}
+
+/* Map */
+#map {
+    width: 100%;
+    height: 300px;
+}
+
+/* Text templates */
+.text {
+    margin: 20px 0;
+    text-align: left;
+
+    font-family: Glacial Indifference, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.text.label {
+    position: relative;
+    text-align: left;
+
+    word-wrap: break-word;
+}
+
+.text.center {
+    text-align: center;
+}
+
+.text.light {
+    font-size: 14px;
+}
+
+.text.label > img {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    margin: -3px 20px 0 0;
+    vertical-align: top;
+}
+
+/* Portfolio */
+.project {
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    min-width: 550px;
+    margin: 10px 0 50px 0;
+    text-align: center;
+}
+
+.project > .pictures {
+    position: relative;
+
+    background-color: #eee;
+
+    border-radius: 5px;
+    white-space: nowrap;
+
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+}
+
+.project > .pictures:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+}
+
+.project > .pictures > div {
+    position: relative;
+    display: inline-block;
+    width: calc(100% / 3);
+    padding-bottom: 57%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+
+    transition: all 300ms ease-in-out;
+    z-index: 2;
+}
+
+.project > .pictures.one > div {
+    width: 100%;
+}
+
+.project > .pictures.two > div {
+    width: 50%;
+}
+
+.project > .pictures.four > div {
+    width: 25%;
+}
+
+.project > .pictures > div:hover {
+    width: 100%;
+
+    box-shadow: 0 0 0;
+}
+
+.project > .pictures > div:first-of-type {
+    background-position: left;
+
+    z-index: 3;
+}
+
+.project > .pictures > div:last-of-type {
+    background-position: right;
+
+    z-index: 1;
+}
+
+.project > .pictures:hover > div:not(:hover) {
+    width: 0%;
+
+    box-shadow: 0 0 0;
+}
+
+.project > .label {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    margin-top: 20px;
+
+    color: #333;
+    background-color: #fff;
+
+    font-family: Glacial Indifference, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+@media (max-width: 1280px)
+{
+    .hero > .header {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 640px)
+{
+    /* Hero */
+    .hero > .header {
+        left: 10px;
+
+        font-size: 30px;
+    }
+
+    .hero > .header > div {
+        padding: 20px;
+    }
+
+    /* Panels */
+    .panels > .panel {
+        padding: 10px;
+    }
+
+    .panels > .fullHeight {
+        height: calc(100vh - 20px);
+    }
+
+    .panels > .slide {
+        padding-bottom: 100px;
+    }
+
+    .panels > .slideTop {
+        margin-top: -100px;
+        padding-top: 100px;
+    }
+
+    .panel > .title {
+        font-size: 26px;
+    }
+
+    .panel > .content {
+        padding: 50px 20px;
+    }
+
+    .panel > .content > .description {
+        font-size: 16px;
+    }
+
+    /* Containers */
+    .column {
+        margin: 0 10px;
+    }
+
+    .column.two {
+        width: calc(50% - 10px);
+    }
+
+    .column.little {
+        max-width: 350px;
+    }
+
+    /* Row items */
+    .rowItem.three {
+        width: calc(33% - 40px);
+    }
+
+    .rowItem.two {
+        width: calc(50% - 40px);
+    }
+
+    .rowItem > .icon {
+        padding: 15px;
+    }
+
+    .rowItem > .icon > img {
+        width: 30px;
+    }
+
+    .rowItem > .title {
+        font-size: 16px;
+    }
+
+    /* Skills */
+    .skill > .title {
+        font-size: 16px;
+    }
+
+    .skill > .items > .item {
+        width: calc(50% - 10px);
+        margin: 5px;
+
+        font-size: 14px;
+    }
+
+    /* Text templates */
+    .text {
+        font-size: 18px;
+    }
+
+    .text.light {
+        font-size: 13px;
+    }
+
+    .text.label > img {
+        width: 20px;
+        margin: 0px 20px 0 0;
+    }
+
+    /* Portfolio */
+    .project {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .project > .label {
+        padding: 15px;
+
+        font-size: 16px;
+    }
+}
