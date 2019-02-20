@@ -33,20 +33,20 @@
             <div class="panel portfolio">
                 <div class="content">
                     <div class="project srProject">
-                        <div class="pictures one">
+                        <div class="pictures one mac">
                             <div style="background-image: url('style/imgs/pronote.png')"></div>
                         </div>
                         <div class="label">Pronote V2 (2018)</div>
                     </div>
                     <div class="project srProject">
-                        <div class="pictures two">
+                        <div class="pictures two mac">
                             <div style="background-image: url('style/imgs/chronocross1.png')"></div>
                             <div style="background-image: url('style/imgs/chronocross2.png')"></div>
                         </div>
                         <div class="label">Chronocross (2018)</div>
                     </div>
                     <div class="project srProject">
-                        <div class="pictures">
+                        <div class="pictures mac">
                             <div style="background-image: url('style/imgs/calendar1.png')"></div>
                             <div style="background-image: url('style/imgs/calendar2.png')"></div>
                             <div style="background-image: url('style/imgs/calendar3.png')"></div>
@@ -78,72 +78,14 @@
                     </div>
                 </div>
             </div>
-            <div class="panel about">
-                <div class="content map">
-                    <div class="title">About me</div>
-                </div>
+            <div class="panel socials">
+                <a href="mailto:bastien.lecorre@gmail.com" target="_blank"><div class="social-media"><img src="style/icons/email.svg"/></div></a>
+                <a href="https://github.com/aroblast" target="_blank"><div class="social-media"><img src="style/icons/github-logo.svg"/></div></a>
             </div>
-            <div class="panel experience">
-                <div class="horizontalContainer">
-                    <div class="rowItem two srRowNumber">
-                        <div class="number"><?php echo (date('Y', strtotime('today')) - 2013); ?></div>
-                        <div class="title">Years of Experience</div>
-                    </div>
-                    <div class="rowItem two srRowNumber">
-                        <div class="number">5</div>
-                        <div class="title">Main Programming Languages</div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="title">Skills and Knowledge</div>
-                <div class="content little">
-                    <div class="column two srColumn">
-                        <div class="skill">
-                            <div class="title"><b>Web Designer/</b></br> 80%</div>
-                            <div class="progressbar">
-                                <div style="width: 80%"></div>
-                            </div>
-                            <div class="items">
-                                <div class="item">Clean Styles</div>
-                                <div class="item">UI/UX Designer</div>
-                                <div class="item">Professional Looking Websites</div>
-                                <div class="item">Photoshop, Sketch, Adobe XD</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column two srColumn">
-                        <div class="skill">
-                            <div class="title"><b>Web Programmer/</b></br> 85%</div>
-                            <div class="progressbar">
-                                <div class="" style="width: 85%"></div>
-                            </div>
-                            <div class="items">
-                                <div class="item">Clean Code</div>
-                                <div class="item">Multiple Back-End Languages</div>
-                                <div class="item">CSS Responsive</div>
-                                <div class="item">Server Knowledge</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="title">Contact Me</div>
-                <div class="content little">
-                    <div class="column little">
-                        <a href="mailto:bastien.lecorre@gmail.com" target="_blank"><div class="text label"><img src="style/icons/envelope.svg"/>bastien.lecorre@gmail.com</div></a>
-                        <div class="text label"><img src="style/icons/phone-call.svg"/>+46 70 761 77 17</div>
-                        <a href="https://www.instagram.com/aroblast" target="_blank"><div class="text label"><img src="style/icons/instagram.svg"/>@aroblast</div></a>
-                        <a href="https://github.com/aroblast" target="_blank"><div class="text label"><img src="style/icons/github.svg"/>@aroblast</div></a>
-                    </div>
-                </div>
-            </div>
-            <div id="map"></div>
-            <div class="panel dark">
+            <div class="panel footer">
                 <div class="column">
-                    <div class="text center">© Bastien LE CORRE - Stockholm, Sweden</div>
-                    <div class="text center light">All the icons are made by Freepik or Gregor Cresnar, downloaded from <a href="https://www.flaticon.com" href="_blank">FlatIcon</a>.</div>
+                    <div class="text">© Bastien LE CORRE - Stockholm, Sweden</div>
+                    <div class="text light">All the icons are made by Freepik or Gregor Cresnar, downloaded from <a href="https://www.flaticon.com" href="_blank">FlatIcon</a>.</div>
                 </div>
             </div>
         </div>

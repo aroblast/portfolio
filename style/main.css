@@ -6,7 +6,7 @@
 body {
     margin: 0;
 
-    background-color: #f0f0f0;
+    background-color: #fff;
 
     font-size: 0;
 
@@ -16,8 +16,10 @@ body {
 }
 
 a {
-    text-decoration: none;
     color: inherit;
+
+    font-style: italic;
+    text-decoration: none;
 }
 
 /* Hero */
@@ -81,7 +83,6 @@ a {
     padding: 50px;
 
     color: #333;
-    background-color: #f0f0f0;
 }
 
 .panels > .portfolio {
@@ -96,174 +97,25 @@ a {
     background-position: left center;
 }
 
+.panels > .socials {
+    padding: 0;
+    text-align: center;
+
+    min-height: auto;
+}
+
+.panels > .footer {
+    min-height: auto;
+
+    color: #fff;
+    background-color: #333;
+}
+
 .panel > .content {
     position: relative;
 }
 
-/* CONTAINERS */
-.about > .content {
-    position: relative;
-    display: inline-block;
-    width: calc(100% - 550px);
-}
-
-.panel > .content > .title {
-    position: relative;
-    display: inline-block;
-    margin-right: 100px;
-
-    font-family: Glacial Indifference, monospace;
-    font-size: 50px;
-}
-
-/* Row items */
-.item {
-    position: relative;
-    display: inline-block;
-    padding: 20px;
-    margin: 20px 0;
-    vertical-align: top;
-    text-align: center;
-}
-
-.item.three {
-    width: calc(30% - 40px);
-}
-
-.item.two {
-    width: calc(40% - 40px);
-}
-
-.item > .icon {
-    position: relative;
-    display: inline-block;
-    margin: auto;
-    padding: 20px;
-
-    background-color: #f83;
-
-    border-radius: 100%;
-}
-
-.item > .icon > img {
-    position: relative;
-    width: 40px;
-}
-
-.item > .number {
-    position: relative;
-    text-align: center;
-
-    font-family: Glacial Indifference, sans-serif;
-    font-size: 50px;
-    font-weight: 900;
-}
-
-.item > .title {
-    position: relative;
-    padding-top: 30px;
-
-    font-family: Glacial Indifference, sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-/* Skills */
-.skill {
-    position: relative;
-    max-width: 500px;
-    margin: auto;
-}
-
-.skill > .title {
-    position: relative;
-    padding: 10px 0;
-    text-align: left;
-
-    color: #f83;
-
-    font-family: Glacial Indifference, monospace;
-    font-size: 18px;
-}
-
-.skill > .items {
-    position: relative;
-    text-align: left;
-}
-
-.skill > .items > .item {
-    position: relative;
-    display: inline-block;
-    width: calc(50% - 20px);
-    margin: 10px;
-    vertical-align: top;
-
-    color: #333;
-
-    font-family: Glacial Indifference, monospace;
-    font-size: 16px;
-}
-
-/* Progress bar */
-.progressbar {
-    position: relative;
-    height: 5px;
-    margin: 10px 0;
-
-    background-color: #ddd;
-
-    border-radius: 10px;
-
-    overflow: hidden;
-}
-
-.progressbar > div {
-    position: relative;
-    height: 5px;
-
-    background-color: #f83;
-}
-
-/* Map */
-#map {
-    width: 100%;
-    height: 300px;
-}
-
-/* Text templates */
-.text {
-    margin: 20px 0;
-    text-align: left;
-
-    font-family: Glacial Indifference, sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-}
-
-.text.label {
-    position: relative;
-    text-align: left;
-
-    word-wrap: break-word;
-}
-
-.text.center {
-    text-align: center;
-}
-
-.text.light {
-    font-size: 14px;
-}
-
-.text.label > img {
-    position: relative;
-    display: inline-block;
-    width: 25px;
-    margin: -3px 20px 0 0;
-    vertical-align: top;
-}
-
-/* Portfolio */
+/* PORTFOLIO */
 .project {
     position: relative;
     display: inline-block;
@@ -318,6 +170,10 @@ a {
     width: 25%;
 }
 
+.project > .pictures.mac > div {
+    padding-bottom: 58.75%;
+}
+
 .project > .pictures > div:hover {
     width: 100%;
 
@@ -348,14 +204,52 @@ a {
     padding: 20px;
     margin-top: 20px;
 
-    color: #333;
-    background-color: #fff;
+    color: #fff;
+    background-color: #333;
 
     font-family: Glacial Indifference, sans-serif;
     font-size: 18px;
     font-weight: 300;
     font-style: italic;
 }
+
+/* SOCIALS */
+.socials > a {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.socials > a > div {
+    position: relative;
+    padding: 15px;
+
+    transition: border 300ms ease-in-out;
+}
+
+.socials > a > div:hover {
+    border-top: 3px solid #333;
+}
+
+.socials > a > div > img {
+    position: relative;
+    width: 20px;
+}
+
+/* FOOTER */
+.text {
+    margin: 20px 0;
+    text-align: left;
+
+    font-family: Glacial Indifference, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.text.light {
+    font-size: 14px;
+}
+
 
 @media (max-width: 1280px)
 {
