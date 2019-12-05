@@ -41,8 +41,10 @@ a {
     bottom: 0;
 
     background-image: url("backgrounds/background-home.svg");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-color: #fff;
 }
 
 .hero > .header {
@@ -62,11 +64,11 @@ a {
 
 .hero > .scrollDown {
     position: absolute;
-    left: calc(50% - 50px);
+    left: calc(50% - 30px);
     bottom: 0;
-    height: 100px;
+    height: 50px;
 
-    filter: invert(.7);
+    transform: rotate(-1deg);
 }
 
 /* PANELS */
@@ -87,28 +89,30 @@ a {
 
 .panels > .portfolio {
     text-align: center;
-}
 
-.panels > .about {
-    text-align: right;
-
-    background-image: url("backgrounds/background-about.svg");
-    background-size: cover;
-    background-position: left center;
+    background-image: url("backgrounds/background-portfolio.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
 }
 
 .panels > .socials {
-    padding: 0;
+    padding: 10px;
+    min-height: auto;
     text-align: center;
 
-    min-height: auto;
+    background-color: #222;
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+
+    z-index: 9;
 }
 
 .panels > .footer {
     min-height: auto;
 
     color: #fff;
-    background-color: #333;
+    background-color: #222;
 }
 
 .panel > .content {
@@ -208,7 +212,7 @@ a {
     background-color: #333;
 
     font-family: Glacial Indifference, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     font-style: italic;
 }
@@ -217,18 +221,12 @@ a {
 .socials > a {
     position: relative;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 .socials > a > div {
     position: relative;
     padding: 15px;
-
-    transition: border 300ms ease-in-out;
-}
-
-.socials > a > div:hover {
-    border-top: 3px solid #333;
 }
 
 .socials > a > div > img {
@@ -253,22 +251,23 @@ a {
 
 @media (max-width: 1280px)
 {
-    .hero > .header {
-        font-size: 50px;
+    .hero > .background {
+        background-image: url("backgrounds/background-home-tablet.svg");
     }
 }
 
 @media (max-width: 640px)
 {
-    /* Hero */
-    .hero > .header {
-        left: 10px;
+    .hero > .background {
+        background-image: url("backgrounds/background-home-mobile.svg");
+    }
 
+    .hero > .header {
         font-size: 30px;
     }
 
-    .hero > .header > div {
-        padding: 20px;
+    .hero > .header > div:last-of-type {
+        font-size: 20px;
     }
 
     /* Panels */
@@ -280,87 +279,6 @@ a {
         height: calc(100vh - 20px);
     }
 
-    .panels > .slide {
-        padding-bottom: 100px;
-    }
-
-    .panels > .slideTop {
-        margin-top: -100px;
-        padding-top: 100px;
-    }
-
-    .panel > .title {
-        font-size: 26px;
-    }
-
-    .panel > .content {
-        padding: 50px 20px;
-    }
-
-    .panel > .content > .description {
-        font-size: 16px;
-    }
-
-    /* Containers */
-    .column {
-        margin: 0 10px;
-    }
-
-    .column.two {
-        width: calc(50% - 10px);
-    }
-
-    .column.little {
-        max-width: 350px;
-    }
-
-    /* Row items */
-    .rowItem.three {
-        width: calc(33% - 40px);
-    }
-
-    .rowItem.two {
-        width: calc(50% - 40px);
-    }
-
-    .rowItem > .icon {
-        padding: 15px;
-    }
-
-    .rowItem > .icon > img {
-        width: 30px;
-    }
-
-    .rowItem > .title {
-        font-size: 16px;
-    }
-
-    /* Skills */
-    .skill > .title {
-        font-size: 16px;
-    }
-
-    .skill > .items > .item {
-        width: calc(50% - 10px);
-        margin: 5px;
-
-        font-size: 14px;
-    }
-
-    /* Text templates */
-    .text {
-        font-size: 18px;
-    }
-
-    .text.light {
-        font-size: 13px;
-    }
-
-    .text.label > img {
-        width: 20px;
-        margin: 0px 20px 0 0;
-    }
-
     /* Portfolio */
     .project {
         width: 100%;
@@ -370,6 +288,6 @@ a {
     .project > .label {
         padding: 15px;
 
-        font-size: 16px;
+        font-size: 12px;
     }
 }
