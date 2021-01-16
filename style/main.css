@@ -89,11 +89,6 @@ a {
 
 .panels > .portfolio {
     text-align: center;
-
-    background-image: url("backgrounds/background-portfolio.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center bottom;
 }
 
 .panels > .socials {
@@ -101,18 +96,14 @@ a {
     min-height: auto;
     text-align: center;
 
-    background-color: #222;
-
-    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
-
-    z-index: 9;
+    background-color: #3ae;
 }
 
 .panels > .footer {
     min-height: auto;
 
     color: #fff;
-    background-color: #222;
+    background-color: #111;
 }
 
 .panel > .content {
@@ -134,7 +125,7 @@ a {
 
     background-color: #eee;
 
-    border-radius: 5px;
+    border-radius: 10px;
     white-space: nowrap;
 
     overflow: hidden;
@@ -175,13 +166,11 @@ a {
 }
 
 .project > .pictures.mac > div {
-    padding-bottom: 58.75%;
+    padding-bottom: 63%;
 }
 
 .project > .pictures > div:hover {
     width: 100%;
-
-    box-shadow: 0 0 0;
 }
 
 .project > .pictures > div:first-of-type {
@@ -198,8 +187,6 @@ a {
 
 .project > .pictures:hover > div:not(:hover) {
     width: 0%;
-
-    box-shadow: 0 0 0;
 }
 
 .project > .label {
