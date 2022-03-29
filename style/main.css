@@ -15,6 +15,10 @@ body {
     overflow-x: hidden;
 }
 
+p {
+    margin: 0;
+}
+
 a {
     color: inherit;
 
@@ -29,22 +33,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-
-    background: linear-gradient(0, #444, #555);
-}
-
-.hero > .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    background-image: url("backgrounds/background-home.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: #fff;
+    text-align: center;
 }
 
 .hero > .header {
@@ -58,8 +47,26 @@ a {
     font-weight: 300;
 }
 
-.hero > .header > div:last-of-type {
+.hero > .header > p:last-of-type {
     font-size: 40px;
+}
+
+.hero > .me {
+    position: absolute;
+    top: 20px;
+    left: 30%;
+    width: 40%;
+    bottom: 60px;
+
+    background-image: url("imgs/me.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+
+    border-radius: 20px;
+
+    box-shadow: 10px 10px 0 #0085ff;
 }
 
 .hero > .scrollDown {
@@ -96,7 +103,7 @@ a {
     min-height: auto;
     text-align: center;
 
-    background-color: #3ae;
+    background-color: #0085ff;
 }
 
 .panels > .footer {
@@ -196,12 +203,14 @@ a {
     margin-top: 20px;
 
     color: #fff;
-    background-color: #333;
+    background-color: #0085ff;
 
     font-family: Glacial Indifference, sans-serif;
     font-size: 16px;
     font-weight: 300;
     font-style: italic;
+
+    border-radius: 12px;
 }
 
 /* SOCIALS */
@@ -238,15 +247,17 @@ a {
 
 @media (max-width: 1280px)
 {
-    .hero > .background {
-        background-image: url("backgrounds/background-home-tablet.svg");
+    .hero > .me {
+        left: 20%;
+        width: 60%;
     }
 }
 
 @media (max-width: 640px)
 {
-    .hero > .background {
-        background-image: url("backgrounds/background-home-mobile.svg");
+    .hero > .me {
+        left: 5%;
+        width: 90%;
     }
 
     .hero > .header {
